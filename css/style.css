@@ -1,0 +1,165 @@
+hmtl,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+:root{
+/*font colors*/
+    --text-gray:#3f4954;
+    --text-light:0096c7;
+    --text-1:028090;
+
+    /*gradient colors*/
+   --color1: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    --color2: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    --color4: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+   --color5: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    --color3: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+    --btn: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+  a{
+      text-decoration: none;
+      color:var(--text-gray)
+;  } 
+  .flex-row 
+  {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+li{
+    list-style-type: none;
+}
+
+/*---------nav--------------*/
+.nav{
+    background:var(--color5);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 20vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+    
+    display: flex;
+    margin: 0;
+
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+
+    
+}
+.nav .nav-brand a{
+font-size: 1.6rem;
+display: block;
+padding: 1rem 0;
+color: var(--text-light);
+font-size: 18px;
+
+}
+.nav .toggale{
+
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggale .togggle-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav .toggale .togggle-icon i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+
+.nav .nav-brand img{
+    width: 100px;
+    height: 80px;
+    display: block;
+}
+.nav .social-icon{
+    padding: 1.4rem 0;
+
+}
+.nav .social-icon i{
+    padding: 0.2rem;
+}
+.nav .social-icon i:hover{
+    color:rgb(100, 178, 197)
+}
+/*------x---nav----------x----*/
+
+
+/* -------------Main content-----------------*/
+/*------------------site title----------------*/
+
+main .site-title{
+background-image: url("../assets/3.jpg");
+background-size: cover;
+height: 110vh;
+display: flex;
+justify-content: center;
+
+}
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+}
+main .site-title h1,h3{
+    margin: 3rem;
+}
+main .site-title h1{
+    font-size: 75px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main .site-title h3{
+    font-size: 30px;
+}
+main .site-title .btn{
+    margin: 10px;
+    background:var(--btn) ;
+    padding:20px 40px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 2px solid white;
+}
+/*------------------site title----------------*/
+
+
+
+/* ------x-------Main content----------x-------*/
+
+
+/*  --------Viewport less than or equal to 750px--------*/
+@media only screen and (max-width:750px)
+{
+    .nav .nav-menu{
+        flex-direction: column;
+    }
+    .nav .toggale{
+        display: initial;
+    }
+}
+
+
+
+/*  -----x---Viewport less than or equal to 750px--x------*/
